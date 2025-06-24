@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Service HP Profesional</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    .highlight {
+      background-color: #e3f2fd;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #007bff;
+      color: white;
+      margin-top: 50px;
+    }
+
+    #wa-button {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+
+    #wa-button:hover {
+      background: #1ebe5b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Service HP Profesional</h1>
+  <p>Solusi cepat & terpercaya untuk semua kerusakan HP Anda</p>
+</header>
+
+<nav>
+  <a href="#layanan">Layanan</a>
+  <a href="#alasan">Kenapa Kami</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<div class="container" id="layanan">
+  <h2>Layanan Kami</h2>
+  <ul>
+    <li><strong>Perbaikan Software:</strong> Flashing, update firmware, atasi bootloop, dan sistem error lainnya.</li>
+    <li><strong>Perbaikan Hardware:</strong> Perbaiki tombol rusak, port charger, IC, dan komponen lainnya.</li>
+    <li><strong>Ganti LCD / Layar Pecah:</strong> Penggantian layar dengan kualitas terbaik & pemasangan presisi.</li>
+    <li><strong>Unlock iCloud / FRP:</strong> Buka kunci iCloud & FRP dengan aman, legal, dan data tetap aman.</li>
+    <li><strong>Perbaikan HP Kemasukan Air:</strong> Penanganan cepat untuk HP terkena air sebelum makin parah.</li>
+  </ul>
+</div>
+
+<div class="container highlight" id="alasan">
+  <h2>Kenapa Pilih Kami?</h2>
+  <ul>
+    <li>Teknisi Bersertifikat & Berpengalaman</li>
+    <li>Harga Transparan dan Terjangkau</li>
+    <li>Sparepart Berkualitas Tinggi</li>
+    <li>Proses Cepat dan Bergaransi</li>
+  </ul>
+</div>
+
+<div class="container" id="kontak">
+  <h2>Hubungi Kami</h2>
+  <p>📍 Alamat: Jl.Urip Sumoharjo No.21 ,Wlingi</p> 
+  <p>📞 Telp: 0813-5788-0573</p> 
+  <p>📱 WhatsApp: Klik tombol hijau di pojok kanan bawah</p>
+</div>
+
+<footer>
+  &copy; 2025 Service HP Profesional. Dibuat dengan. 
+</footer>
+
+<!-- Tombol WhatsApp -->
+<button id="wa-button" onclick="openWhatsApp()">💬</button>
+
+<script>
+  function openWhatsApp() {
+    const phone = "6281357880573"; // Ganti dengan nomor WA kamu 
+    const text = "Halo, saya ingin tanya-tanya tentang service HP.";
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
+  }
+</script>
+
+</body>
+</html>
