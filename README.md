@@ -3,82 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Service HP Blitar</title>
+  <title>Service HP Blitar - Profesional & Terpercaya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth;}
-    body {font-family:'Segoe UI', sans-serif; background:#f7f9fc; color:#333;}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background-color: #f9f9f9; color: #333; }
+
     header {
-      background: linear-gradient(to right, #007bff, #0056b3);
+      background: url('https://i.ibb.co/9NZk38g/repair-banner.jpg') no-repeat center center/cover;
       color: white;
-      padding: 30px 20px;
       text-align: center;
-      position: relative;
+      padding: 100px 20px 60px;
     }
-    header h1 {font-size: 2.5em;}
-    #clock {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      font-size: 14px;
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
+
+    header p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
     nav {
-      text-align: center;
-      background: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 10px;
+      background-color: #0056b3;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
     }
+
     nav a {
-      margin: 0 15px;
+      color: white;
       text-decoration: none;
-      color: #007bff;
       font-weight: bold;
     }
-    section {
-      max-width: 900px;
+
+    .container {
+      max-width: 1100px;
       margin: 40px auto;
-      padding: 20px;
+      padding: 0 20px;
+    }
+
+    section {
       background: white;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.5s ease-in-out;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      padding: 30px;
     }
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
+
+    section h2 {
+      color: #007bff;
+      margin-bottom: 20px;
     }
-    h2 {color: #007bff; margin-bottom: 10px;}
-    ul {padding-left: 20px; line-height: 1.7;}
-    footer {
+
+    ul li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .img-box {
+      margin: 20px 0;
       text-align: center;
+    }
+
+    .img-box img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
       background: #007bff;
       color: white;
-      padding: 25px;
+      text-align: center;
+      padding: 30px 10px;
       margin-top: 50px;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-family: inherit;
-    }
-    button {
-      background: #007bff;
+
+    .btn-wa {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
       color: white;
-      padding: 10px;
       border: none;
-      border-radius: 8px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       cursor: pointer;
-    }
-    button:hover {
-      background: #0056b3;
     }
   </style>
 </head>
@@ -86,80 +103,48 @@
 
 <header>
   <h1>Service HP Blitar</h1>
-  <div id="clock">--:--:--</div>
-  <p>Solusi cepat, aman, dan bergaransi untuk kerusakan HP Anda</p>
+  <p>Spesialis Perbaikan HP | Cepat - Aman - Bergaransi</p>
 </header>
 
 <nav>
   <a href="#layanan">Layanan</a>
-  <a href="#alasan">Kenapa Kami</a>
+  <a href="#tentang">Tentang</a>
   <a href="#kontak">Kontak</a>
 </nav>
 
-<section id="layanan">
-  <h2>Layanan Kami</h2>
-  <ul>
-    <li><strong>Perbaikan Software:</strong> Bootloop, update sistem, flashing, aplikasi error.</li>
-    <li><strong>Perbaikan Hardware:</strong> Tombol rusak, IC, port charger, speaker, mic.</li>
-    <li><strong>Ganti LCD / Layar:</strong> Penggantian layar retak atau mati total.</li>
-    <li><strong>Unlock iCloud / FRP:</strong> Aman, legal, data tetap terjaga.</li>
-    <li><strong>Kemasukan Air:</strong> Penanganan cepat sebelum terjadi kerusakan serius.</li>
-  </ul>
-</section>
+<div class="container">
+  <section id="layanan">
+    <h2>Layanan Kami</h2>
+    <div class="img-box">
+      <img src="https://i.ibb.co/wdzb4M4/repair-service.jpg" alt="Service HP" />
+    </div>
+    <ul>
+      <li><strong>Perbaikan Software:</strong> Flashing, bootloop, virus, error sistem.</li>
+      <li><strong>Perbaikan Hardware:</strong> Tombol rusak, IC charger, port USB.</li>
+      <li><strong>Ganti LCD / Touchscreen:</strong> Layar retak atau tidak responsif.</li>
+      <li><strong>Unlock iCloud / FRP:</strong> Tanpa ribet, aman dan legal.</li>
+      <li><strong>Servis HP Kemasukan Air:</strong> Penanganan cepat agar tidak short.</li>
+    </ul>
+  </section>
 
-<section id="alasan">
-  <h2>Kenapa Pilih Kami?</h2>
-  <ul>
-    <li>Teknisi bersertifikat dan berpengalaman</li>
-    <li>Estimasi harga jujur & transparan</li>
-    <li>Sparepart original / OEM berkualitas</li>
-    <li>Garansi perbaikan hingga 1 bulan</li>
-  </ul>
-</section>
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Kami adalah penyedia layanan perbaikan HP terpercaya di Blitar sejak 2017. Dengan teknisi berpengalaman dan alat lengkap, kami siap membantu segala jenis kerusakan HP Anda. Layanan cepat, harga transparan, dan bergaransi.</p>
+  </section>
 
-<section id="kontak">
-  <h2>Kontak Kami</h2>
-  <p>📍 Alamat: Jl. Urip Sumoharjo No.21, Wlingi, Blitar</p>
-  <p>📞 Telp: 0813-5788-0573</p>
-  <form id="contactForm">
-    <input type="text" placeholder="Nama Anda" required />
-    <input type="email" placeholder="Email Aktif" required />
-    <textarea rows="4" placeholder="Pesan Anda..." required></textarea>
-    <button type="submit">Kirim Pesan</button>
-  </form>
-</section>
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>📍 Alamat: Jl. Urip Sumoharjo No.21, Wlingi, Blitar</p>
+    <p>📞 Telp: 0813-5788-0573</p>
+    <p>📱 WhatsApp: Klik tombol hijau di pojok kanan bawah</p>
+  </section>
+</div>
 
 <footer>
-  &copy; 2025 Service HP Blitar. Dibuat oleh Daarozikin.
+  &copy; 2025 Service HP Blitar. Dibuat dengan ❤️ oleh Daarozikin.
 </footer>
 
-<script>
-  // Waktu real-time
-  function updateClock() {
-    const now = new Date();
-    document.getElementById('clock').innerText =
-      now.toLocaleTimeString('id-ID');
-  }
-  setInterval(updateClock, 1000);
-  updateClock();
-
-  // Animasi scroll muncul
-  const sections = document.querySelectorAll("section");
-  window.addEventListener("scroll", () => {
-    const trigger = window.innerHeight * 0.85;
-    sections.forEach((sec) => {
-      const top = sec.getBoundingClientRect().top;
-      if (top < trigger) sec.classList.add("visible");
-    });
-  });
-
-  // Notifikasi form
-  document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Pesan berhasil dikirim! Kami akan segera menghubungi Anda.");
-    this.reset();
-  });
-</script>
+<button class="btn-wa" onclick="window.open('https://wa.me/6281357880573?text=Halo,%20saya%20ingin%20servis%20HP.', '_blank')">💬</button>
 
 </body>
 </html>
